@@ -1,0 +1,10 @@
+.sidebar{
+    padding-left: 10px;
+    margin: 0 5px;
+    border:1px solid #ff8508;
+    overflow: auto;
+    height: 300px;
+    border-radius:10px;
+}
+
+

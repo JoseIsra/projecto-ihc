@@ -11,7 +11,7 @@ export default makeStyles(()=>({
         
     }, 
     gridList: {
-        height: '100%',
+        height: '300px',
         overflow: 'auto',
         '&::-webkit-scrollbar': {
             display: 'none'

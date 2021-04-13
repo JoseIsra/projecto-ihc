@@ -11,7 +11,7 @@ export default makeStyles(()=>({
         
     }, 
     gridList: {
-        height: '300px',
+        height: '350px',
         overflow: 'auto',
         '&::-webkit-scrollbar': {
             display: 'none'
@@ -19,8 +19,11 @@ export default makeStyles(()=>({
     },
     text: {
         color: '#666666',
-        fontWeight: '600',
-        nargin: '0.5rem 0.5rem'
+        fontSize:'0.9rem',
+        fontWeight: 'bolder',
+        position: 'relative',
+        marginTop:'10px',
+        fontFamily: ' Arial, Helvetica, sans-serif;'
     }
 
 }));

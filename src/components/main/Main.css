@@ -10,6 +10,7 @@
 {
     width: 100%;
     display:flex;
+    height:80%;
 }
 .left__content
 {
@@ -23,7 +24,7 @@ flex:0.4;
     margin-right: 10px;
     border:1px solid #ff8508;
     display: grid;
-    height: 300px;
+    height: 100%;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(5,1fr);
     grid-row-gap:2px;

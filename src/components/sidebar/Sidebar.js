@@ -7,9 +7,11 @@ export const Sidebar = () => {
     return (
         <div className="sidebar">
         <Typography variant="subtitle1">Opciones </Typography>
+        <div className="sidebar__categories">
         {awesomeOptions.map(item => (
             <SidebarOptions key={item.id} title= {item.name} Icon={item.icon}/>
         ))} 
+        </div>
 
         </div>
     )

@@ -9,7 +9,7 @@ export const Sidebar = () => {
         <Typography variant="subtitle1">Opciones </Typography>
         <div className="sidebar__categories">
         {awesomeOptions.map(item => (
-            <SidebarOptions key={item.id} title= {item.name} Icon={item.icon}/>
+            <SidebarOptions key={item.id} id={item.id} title= {item.name} Icon={item.icon}/>
         ))} 
         </div>
 

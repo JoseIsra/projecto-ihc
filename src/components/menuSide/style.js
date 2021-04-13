@@ -23,6 +23,7 @@ export default makeStyles(()=>({
         fontWeight: 'bolder',
         position: 'relative',
         marginTop:'10px',
+        marginLeft:'1rem',
         fontFamily: ' Arial, Helvetica, sans-serif;'
     }
 

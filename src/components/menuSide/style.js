@@ -20,7 +20,7 @@ export default makeStyles(()=>({
     text: {
         color: '#666666',
         fontWeight: '600',
-        marginBottom:'0.4rem'
+        nargin: '0.5rem 0.5rem'
     }
 
 }));

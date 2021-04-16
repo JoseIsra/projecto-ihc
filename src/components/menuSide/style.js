@@ -24,14 +24,17 @@ export default makeStyles((theme)=>({
         },
     },
     emergency: {
-        display:'flex',
-        height:'15rem',
-        overflow:'auto',
-        '&::-webkit-scrollbar': {
-            display: 'none'
-        },
-        [theme.breakpoints.down('xl')]: {
-            display:'none',
+        display:'none',
+        [theme.breakpoints.only('xl')]: {
+            display:'flex',
+            flexWrap:'wrap',
+            justifyContent:'center',
+            alignItems:'flex-start',
+            height:'15rem',
+            overflow:'auto',
+            '&::-webkit-scrollbar': {
+                display: 'none'
+            },
         }
     },
     text: {

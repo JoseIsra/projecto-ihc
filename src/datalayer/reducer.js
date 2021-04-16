@@ -1,7 +1,8 @@
 
 export const initialState = {
-    category:1
-}
+    category:1,
+    basket : [],
+};
 
 const reducer =(state, action)=>{
     console.log(action)
@@ -10,7 +11,13 @@ const reducer =(state, action)=>{
             return {
                 ...state,
                 category: action.payload
-            }
+            };
+        }
+        case 'ADD_ITEM': {
+            return {
+                ...state,
+                basket: [...state.basket, action.payload],
+            };
         }
         default : return state
     }

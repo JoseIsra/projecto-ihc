@@ -11,14 +11,14 @@ export const MenuSide = () => {
     const [{category, basket}] = useDataLayerValue();
 
     return (
-        <div className={ classes.root } >
+        <div className={ classes.root } style={{position:'relative'}} >
             <div className={ classes.info }>
             <p  className={classes.text}>{awesomeOptions[category - 1].name}</p>
             <Badge badgeContent={basket.length} classes={{badge:classes.customBadge}}>
             <button className={classes.button}><AssignmentIcon fontSize='large' /></button>
             </Badge>
             </div>
-            <Container   className={classes.container}>
+            <Container>
             <GridList className={classes.gridList} cols={2} cellHeight='auto' spacing={0}>
             {popeyeFood.filter((food)=>food.category === category).map(item => (
                 <GridListTile key={item.id} cols={1}>
@@ -27,14 +27,14 @@ export const MenuSide = () => {
                         ))}
 
                 </GridList>
-            <GridList className={classes.emergency} cols={4} cellHeight='auto' spacing={1}>
+            {/* <GridList className={classes.emergency} cols={4} cellHeight='auto' spacing={1}>
             {popeyeFood.filter((food)=>food.category === category).map(item => (
                 <GridListTile key={item.id} cols={1}>
                     <Food  id={item.id} name={item.name} photo={item.photo} precio={item.precio} />
                 </GridListTile>                        
                         ))}
 
-                </GridList>
+                </GridList> */}
                 </Container>
         </div>
     )

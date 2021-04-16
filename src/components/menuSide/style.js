@@ -25,17 +25,17 @@ export default makeStyles((theme)=>({
     },
     emergency: {
         display:'none',
-        // [theme.breakpoints.only('xl')]: {
-        //     display:'flex',
-        //     flexWrap:'wrap',
-        //     justifyContent:'center',
-        //     alignItems:'flex-start',
-        //     height:'15rem',
-        //     overflow:'auto',
-        //     '&::-webkit-scrollbar': {
-        //         display: 'none'
-        //     },
-        // }
+        [theme.breakpoints.up('xl')]: {
+            display:'flex',
+            flexWrap:'wrap',
+            justifyContent:'center',
+            alignItems:'flex-start',
+            height:'15rem',
+            overflow:'auto',
+            '&::-webkit-scrollbar': {
+                display: 'none'
+            },
+        }
     },
     text: {
         color: '#666666',

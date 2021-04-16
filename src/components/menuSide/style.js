@@ -24,18 +24,18 @@ export default makeStyles((theme)=>({
         },
     },
     emergency: {
-        display:'none',
-        [theme.breakpoints.up('xl')]: {
-            display:'flex',
-            flexWrap:'wrap',
-            justifyContent:'center',
-            alignItems:'flex-start',
-            height:'15rem',
-            overflow:'auto',
-            '&::-webkit-scrollbar': {
-                display: 'none'
-            },
-        }
+        display:'flex',
+        flexWrap:'wrap',
+        justifyContent:'center',
+        alignItems:'flex-start',
+        height:'15rem',
+        overflow:'auto',
+        '&::-webkit-scrollbar': {
+            display: 'none'
+        },
+        [theme.breakpoints.down('xl')]: {
+            display:'none',
+        },
     },
     text: {
         color: '#666666',

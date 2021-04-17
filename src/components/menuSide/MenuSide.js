@@ -36,13 +36,13 @@ export const MenuSide = () => {
                         ))}
 
                 </GridList>
-            {/* <GridList className={classes.emergency} cols={4} cellHeight='auto' spacing={1}>
+            <GridList className={classes.emergency} cols={4} cellHeight='auto' spacing={1}>
             {popeyeFood.filter((food)=>food.category === category).map(item => (
                 <GridListTile key={item.id} cols={1}>
                     <Food  id={item.id} name={item.name} photo={item.photo} precio={item.precio} />
                 </GridListTile>                        
                         ))}
-                </GridList> */}
+                </GridList>
                 </Container>
         </div>
     )

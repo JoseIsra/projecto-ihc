@@ -23,20 +23,20 @@ export default makeStyles((theme)=>({
                 display:'none'
         }
     },
-    emergency: {
-        display:'flex',
-        flexWrap:'wrap',
-        justifyContent:'center',
-        alignItems:'flex-start',
-        height:'15rem',
-        overflow:'auto',
-        '&::-webkit-scrollbar': {
-            display: 'none'
-        },
-        [theme.breakpoints.down('lg')]: {
-            display:'none',
-        },
-    },
+    // emergency: {
+    //     display:'flex',
+    //     flexWrap:'wrap',
+    //     justifyContent:'center',
+    //     alignItems:'flex-start',
+    //     height:'15rem',
+    //     overflow:'auto',
+    //     '&::-webkit-scrollbar': {
+    //         display: 'none'
+    //     },
+    //     [theme.breakpoints.down('lg')]: {
+    //         display:'none',
+    //     },
+    // },
     text: {
         color: '#666666',
         fontSize:'0.9rem',

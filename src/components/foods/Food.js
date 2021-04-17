@@ -3,7 +3,7 @@ import { useDataLayerValue } from '../../datalayer/DataLayer';
 import './Food.css';
 
 
-export const Food = ({id, name, photo, precio}) => {
+export const Food = ({id, name, photo, precio, description}) => {
     const [,dispatch] = useDataLayerValue();
     const addProduct = () => {
             dispatch({
@@ -12,7 +12,8 @@ export const Food = ({id, name, photo, precio}) => {
                     id,
                     name,
                     photo,
-                    precio
+                    precio,
+                    description
                 }
             })
     };

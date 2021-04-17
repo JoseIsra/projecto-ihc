@@ -19,9 +19,6 @@ export default makeStyles((theme)=>({
         '&::-webkit-scrollbar': {
             display: 'none'
         },
-        [theme.breakpoints.up('xl')]: {
-            display:'none'
-        },
     },
     // emergency: {
     //     display:'flex',

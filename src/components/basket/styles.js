@@ -27,8 +27,9 @@ export default makeStyles((theme)=>({
             position:'relative',
         },
         grid: {
-            height: '70vmin',
+            height: '60vmin',
             overflow:'auto',
+            marginTop:'0.7rem',
             boxShadow:'2px  0 10px rgba(0,0,0,.6)',
             '&::-webkit-scrollbar': {
                 display:'none'

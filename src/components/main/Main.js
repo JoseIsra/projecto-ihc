@@ -18,12 +18,12 @@ export const Main = () => {
                     <Basket />
             ):(
                 <div>
-                <Grid container spacing={1} direction="row" 
+                <Grid container spacing={3} direction="row" 
                 justify="center" alignItems="stretch" wrap="wrap" >
-                    <Grid item sm={6} md={5}  lg={5} xl={3}>
+                    <Grid item sm={6} md={5}  lg={4} xl={3}>
                     <Sidebar/> 
                     </Grid>
-                    <Grid item sm={6} md={6} lg={7} xl={9}>
+                    <Grid item sm={6} md={6} lg={8} xl={9}>
                     <MenuSide />
                     </Grid>
                 </Grid>

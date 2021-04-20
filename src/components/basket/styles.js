@@ -14,7 +14,7 @@ export default makeStyles((theme)=>({
             position:'absolute',
             left:'1rem',
             top:'-1.5rem',
-            fontSize:'0.5rem',
+            fontSize:'0.7rem',
             backgroundColor:'rgba(250, 104, 7, 0.924)',
             color:'white',
             fontWeight:'bolder',
@@ -37,7 +37,7 @@ export default makeStyles((theme)=>({
             
         },
         deleteButton: {
-        fontSize:'0.6rem',
+        fontSize:'0.7rem',
         position:'absolute',
         right:'0.7rem',
         bottom:'0.08rem',
@@ -50,10 +50,7 @@ export default makeStyles((theme)=>({
         }
         },
         picture: {
-            width:'40%',
-            display:'block',
-            marginLeft:'auto',
-            marginRight:'auto',
+            width:'120px',
             objectFit:'contain'
         },
         details: {

@@ -15,9 +15,9 @@ export const Total = () => {
             <CurrencyFormat  
             renderText ={(value) => (
                 <>
-                <Typography variant="subtitle2">Total ({basket.length}) productos</Typography>
+                <Typography variant="h6">Total ({basket.length}) productos</Typography>
                 <Box >
-                <Typography display="block" variant="caption">Monto: <span> <strong>S/.{`${value}`}</strong></span></Typography>
+                <Typography  variant="subtitle2">Monto: <span> <strong>S/.{`${value}`}</strong></span></Typography>
                 <Button className={classes.button} variant="outlined" color="primary" >Realizar compra</Button>
                 </Box>
                 </>

@@ -25,9 +25,9 @@ export const Basket = () => {
         <div>
             {basket.length > 0 ? (
                 <Grid container spacing={0} wrap="wrap" direction="row" justify="space-evenly" className={classes.conta}>
-                    <Button variant="contained" size="small" className={classes.button} onClick={hideBasket}>Volver al menu de platos</Button>
+                    <Button variant="contained" size="medium" className={classes.button} onClick={hideBasket}>Volver al menu de platos</Button>
                 
-                    <Grid item xs={12} sm={6} md={7} lg={5} className={classes.grid}>
+                    <Grid item xs={12} sm={5} md={5} lg={7} xl={6} className={classes.grid}>
                 
                         {basket.map(item => (
                             <Card className={classes.root} key={item.id}>
@@ -37,19 +37,19 @@ export const Basket = () => {
                                 />
                                 <div className={classes.details}>
                                     <CardContent className={classes.content}>
-                                        <Typography component="h6"  >{item.name}</Typography>
+                                        <Typography variant="h6"  >{item.name}</Typography>
                                         <Typography variant="caption" display="block"
-                                            style={{ padding: '0', margin: '0', lineHeight: '16px' }}
+                                            style={{ lineHeight: '16px' }}
                                             color="textSecondary"  >{item.description}</Typography>
-                                        <Typography variant="caption">Precio: S/.{item.precio}</Typography>
+                                        <Typography variant="subtitle2">Precio: S/.{item.precio}</Typography>
                                         <Button variant="contained" onClick={() => deleteItem(item.id)}
-                                            size="small" className={classes.deleteButton} >Eliminar</Button>
+                                            size="medium" className={classes.deleteButton} >Eliminar</Button>
                                     </CardContent>
                                 </div>
                             </Card>
                         ))}
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={6} md={3} lg={4} xl={4}>
                         <Total />
                     </Grid>
                 </Grid>

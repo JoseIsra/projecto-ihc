@@ -21,7 +21,7 @@ export default makeStyles((theme)=>({
         '&::-webkit-scrollbar': {
             display: 'none'
         },
-        [theme.breakpoints.up('xl')]: {
+        [theme.breakpoints.up(1920)]: {
                 display:'none'
         }
     },
@@ -35,7 +35,7 @@ export default makeStyles((theme)=>({
         '&::-webkit-scrollbar': {
             display: 'none'
         },
-        [theme.breakpoints.down('lg')]: {
+        [theme.breakpoints.down(1920)]: {
             display:'none',
         },
     },

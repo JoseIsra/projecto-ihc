@@ -21,23 +21,7 @@ export default makeStyles((theme)=>({
         '&::-webkit-scrollbar': {
             display: 'none'
         },
-        [theme.breakpoints.up(1920)]: {
-                display:'none'
-        }
-    },
-    emergency: {
-        display:'flex',
-        flexWrap:'wrap',
-        justifyContent:'center',
-        alignItems:'flex-start',
-        height:'15rem',
-        overflow:'auto',
-        '&::-webkit-scrollbar': {
-            display: 'none'
-        },
-        [theme.breakpoints.down(1920)]: {
-            display:'none',
-        },
+    
     },
     text: {
         color: '#666666',

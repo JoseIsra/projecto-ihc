@@ -1,5 +1,5 @@
 import React from 'react'
-import { Total } from "../../components";
+import { Total  } from "../../components";
 import { useDataLayerValue } from '../../datalayer/DataLayer';
 import useStyles from './styles';
 import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@material-ui/core';

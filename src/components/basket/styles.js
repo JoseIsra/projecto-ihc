@@ -6,7 +6,7 @@ export default makeStyles((theme)=>({
             marginTop:'1rem',
             position:'relative',
             display:'flex',
-            border:'1px solid red',
+            border:'1px solid #ff8508',
             padding:'0.05rem',
             margin:'0.5rem'
         },

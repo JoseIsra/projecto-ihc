@@ -2,8 +2,9 @@
 import React from 'react'
 import CurrencyFormat from 'react-currency-format';
 import { useDataLayerValue } from '../../datalayer/DataLayer';
-import { Container ,Box, Typography, Button} from '@material-ui/core';
+import { Container ,Box, Typography} from '@material-ui/core';
 import { getAmountOfMoney } from '../../datalayer/reducer';
+import { ModalBasket } from '../index';
 import useStyles from './styles'
 
 export const Total = () => {
@@ -18,7 +19,7 @@ export const Total = () => {
                 <Typography variant="h6">Total ({basket.length}) productos</Typography>
                 <Box >
                 <Typography  variant="subtitle2">Monto: <span> <strong>S/.{`${value}`}</strong></span></Typography>
-                <Button className={classes.button} variant="outlined" color="primary" >Realizar compra</Button>
+                <ModalBasket />
                 </Box>
                 </>
             )}

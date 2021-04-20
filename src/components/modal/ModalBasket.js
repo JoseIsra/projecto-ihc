@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import useStyles, { getModalStyle } from './style';
+import useStyles, { getModalStyle } from './styles';
 import {Modal, Button, Typography } from '@material-ui/core'
 import { useDataLayerValue } from '../../datalayer/DataLayer';
 
@@ -50,7 +50,7 @@ export const ModalBasket = () => {
 
     return (
         <div>
-        <Button className={classes.button}   onClick={handleOpen} >
+        <Button className={classes.buyButton}   onClick={handleOpen} >
         Realizar compra
         </Button>
 

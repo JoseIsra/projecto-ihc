@@ -50,7 +50,7 @@ export const ModalBasket = () => {
 
     return (
         <div>
-        <Button className={classes.buyButton}   onClick={handleOpen} >
+        <Button className={classes.buyButton} onClick={handleOpen} >
         Realizar compra
         </Button>
 

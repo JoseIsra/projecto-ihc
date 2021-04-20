@@ -5,8 +5,8 @@ import useStyles from './styles';
 import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@material-ui/core';
 
 export const Basket = () => {
-    const [{ basket }, dispatch] = useDataLayerValue();
     const classes = useStyles();
+    const [{ basket }, dispatch] = useDataLayerValue();
     const hideBasket = () => {
         dispatch({
             type: 'SHOW__BASKET',
@@ -25,7 +25,7 @@ export const Basket = () => {
         <div>
             {basket.length > 0 ? (
                 <Grid container spacing={0} wrap="wrap" direction="row" justify="space-evenly" className={classes.conta}>
-                    <Button variant="contained" size="small" className={classes.button} onClick={hideBasket}>Volver al menu de platos</Button>
+                    <Button variant="contained" size="small" className={classes.realbutton} onClick={hideBasket}>Volver al menu de platos</Button>
                 
                     <Grid item xs={12} sm={5} md={5} lg={7} xl={6} className={classes.grid}>
                 

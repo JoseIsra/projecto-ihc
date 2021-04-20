@@ -25,7 +25,7 @@ export const Basket = () => {
         <div>
             {basket.length > 0 ? (
                 <Grid container spacing={0} wrap="wrap" direction="row" justify="space-evenly" className={classes.conta}>
-                    <Button variant="contained" size="small" className={classes.realbutton} onClick={hideBasket}>Volver al menu de platos</Button>
+                    <button  className={classes.realbutton} onClick={hideBasket}>Volver al menu de platos</button>
                 
                     <Grid item xs={12} sm={5} md={5} lg={7} xl={6} className={classes.grid}>
                 
@@ -42,8 +42,8 @@ export const Basket = () => {
                                             style={{ lineHeight: '16px' }}
                                             color="textSecondary"  >{item.description}</Typography>
                                         <Typography variant="subtitle2">Precio: S/.{item.precio}</Typography>
-                                        <Button variant="contained" onClick={() => deleteItem(item.id)}
-                                            size="medium" className={classes.deleteButton} >Eliminar</Button>
+                                        <button  onClick={() => deleteItem(item.id)}
+                                            className={classes.deleteButton} >Eliminar</button>
                                     </CardContent>
                                 </div>
                             </Card>

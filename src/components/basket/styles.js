@@ -14,14 +14,11 @@ export default makeStyles(()=>({
             position:'absolute',
             left:'1rem',
             top:'-1.5rem',
-            fontSize:'0.7rem',
+            fontSize:'1rem',
             backgroundColor:'rgba(250, 104, 7, 0.924)',
             color:'white',
             fontWeight:'bolder',
             borderColor:'#f7f7f7',
-            '&:hover':{
-                backgroundColor:'rgba(250, 104, 7, 0.924)'
-            }
         },
         conta: {
             position:'relative',

@@ -13,12 +13,16 @@ export default makeStyles(()=>({
         realbutton: {
             position:'absolute',
             left:'1rem',
+            padding:'5px',
+            border:'none',
+            borderRadius:'10px',
             top:'-1.5rem',
             fontSize:'1rem',
             backgroundColor:'rgba(250, 104, 7, 0.924)',
             color:'white',
             fontWeight:'bolder',
-            borderColor:'#f7f7f7',
+            cursor:'pointer',
+            outline:'none',
         },
         conta: {
             position:'relative',
@@ -34,14 +38,16 @@ export default makeStyles(()=>({
             
         },
         deleteButton: {
-        fontSize:'0.7rem',
+        fontSize:'1rem',
         position:'absolute',
+        color:'#f7f7f7',
         right:'0.7rem',
         bottom:'0.08rem',
+        padding:'5px',
+        cursor:'pointer',
         border:'1px solid orange',
         backgroundColor:'rgba(250, 104, 7, 0.924)',
-        color:'#f7f7f7',
-        fontWeight:'bolder',
+        fontWeight:'700',
         '&:hover':{
             backgroundColor:'rgba(250, 104, 7, 0.924)'
         }

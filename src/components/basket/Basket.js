@@ -27,7 +27,7 @@ export const Basket = () => {
                 <Grid container spacing={0} wrap="wrap" direction="row" justify="space-evenly" className={classes.conta}>
                     <button  className={classes.realbutton} onClick={hideBasket}>Volver al menu de platos</button>
                 
-                    <Grid item xs={12} sm={5} md={5} lg={7} xl={6} className={classes.grid}>
+                    <Grid item xs={12} sm={5} md={6} lg={7} xl={6} className={classes.grid}>
                 
                         {basket.map(item => (
                             <Card className={classes.root} key={item.id}>
@@ -49,7 +49,7 @@ export const Basket = () => {
                             </Card>
                         ))}
                     </Grid>
-                    <Grid item xs={12} sm={6} md={3} lg={4} xl={4}>
+                    <Grid item xs={12} sm={6} md={5} lg={4} xl={4}>
                         <Total />
                     </Grid>
                 </Grid>
